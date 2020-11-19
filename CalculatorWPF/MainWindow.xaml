@@ -6,7 +6,54 @@
         xmlns:local="clr-namespace:CalculatorWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <TextBox HorizontalContentAlignment="Right" Name="TextBox" FontSize="40" DockPanel.Dock="Top" Height="80" Background="Azure">
+        </TextBox>
+        <Label Name="label" DockPanel.Dock="Top" Height="50" Background="Beige" FontSize="30">
+         </Label>
+        <UniformGrid Background="AntiqueWhite"  Columns="4" Rows="5">
+            <Button Content="+/-" FontSize="30" Click="Button_Click_10">
+                </Button>
+            <Button Content="CE" FontSize="30" Click="Button_Click_16">
+            </Button>
+            <Button Content="CLE"  FontSize="30" Click="Button_Click_17">
+            </Button>
+            <Button Content="/" FontSize="30" Click="Button_Click_15">
+            </Button>
+            <Button Content="7" FontSize="20" Click="Button_Click_6">
+            </Button>
+            <Button Content="8" FontSize="20" Click="Button_Click_7">
+            </Button>
+            <Button Content="9" FontSize="20" Click="Button_Click_8">
+            </Button>
+            <Button Content="*" FontSize="30" Click="Button_Click_14">
+            </Button>
+            <Button Content="4" FontSize="20" Click="Button_Click_3">
+            </Button>
+            <Button Content="5" FontSize="20" Click="Button_Click_4">
+            </Button>
+            <Button Content="6" FontSize="20" Click="Button_Click_5">
+            </Button>
+            <Button Content="-" FontSize="30" Click="Button_Click_13">
+            </Button>
+            <Button Content="1" FontSize="20" Click="Button_Click">
+            </Button>
+            <Button Content="2" FontSize="20" Click="Button_Click_1">
+            </Button>
+            <Button Content="3" FontSize="20" Click="Button_Click_2">
+            </Button>
+            <Button Content="+" FontSize="30" Click="Button_Click_12">
+            </Button>
+            <Button Content="." FontSize="30" Click="Button_Click_9">
+            </Button>
+            <Button Content="0" FontSize="20">
+            </Button>
+            <Button Content="=" FontSize="30" Click="Button_Click_11">
+            </Button>
+            <Label Name="labelTime" FontSize="30" >
+                
+            </Label>
+        </UniformGrid>
+
+    </DockPanel>
 </Window>
